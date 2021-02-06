@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.hide{
+    display: none;
+}
+
+.raceGame{
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    /* background-color: rosybrown; */
+    background:url(./image/bgimg.jpg) no-repeat;
+    background-size:cover;
+}
+.startScrean{
+    background-color:red;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    width: 45rem;
+    height: 10rem;
+    padding-top: 2.5rem;
+    cursor: pointer;
+    letter-spacing: 5;
+    word-spacing: 3;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 12;
+}
+.playArea{
+    width: 30vw;
+    height: 100vh;
+    background-color:#172430;
+    position: relative;
+    border-left: 5px dashed #fff;
+    border-right: 5px dashed #fff;
+    box-sizing:content-box;
+}
+
+.car,.enemy{
+    width:6rem;
+    height: 9.5rem;
+    background-color: red;
+    position: absolute;
+    border-radius: 1.4rem;
+    z-index: 1;
+}
+.car{
+    background: url(./image/bluecar.jpg) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.score{
+    position: absolute;
+    left: 15rem;
+    top:5rem;
+    width: 15rem;
+    line-height: 4.5rem;
+    background-color: darkcyan;
+    color: white;
+    font-size: 2rem;
+    /* box-shadow: 0 2px 2px #1e1e20; */
+    border: 2px solid #172430;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.lines{
+    width: 8px;
+    height: 60px;
+    position: absolute;
+    margin-left: 195px;
+    background-color: #fff;
+}
